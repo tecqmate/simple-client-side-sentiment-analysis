@@ -1,1 +1,34 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Subreddit Vibe Check</title>
+  <!-- Load Sentiment Library via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sentiment@5.0.2/build/sentiment.min.js"></script>
+  <style> @import('style.css');
+  </style>
+</head>
+<body>
+
+  <h1>The Subreddit Vibe Check</h1>
+  
+  <div class="controls">
+    <input type="text" id="subredditInput" value="webdev" placeholder="Enter subreddit..." />
+    <button onclick="checkVibe()">Check Vibe</button>
+  </div>
+
+  <div id="results" style="display: none;">
+    <div class="stats">
+      <div>Overall Score: <span id="totalScore">0</span></div>
+      <div>Positive: <span id="posCount" class="pos">0</span></div>
+      <div>Neutral: <span id="neuCount" class="neu">0</span></div>
+      <div>Negative: <span id="negCount" class="neg">0</span></div>
+    </div>
+    <div id="postsList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
