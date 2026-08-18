@@ -1,9 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
 
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 0 10px; }
-    .controls { display: flex; gap: 10px; margin-bottom: 20px; }
-    input { flex: 1; padding: 10px; font-size: 16px; }
-    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
-    .stats { display: flex; justify-content: space-around; background: #f0f0f0; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
-    .post { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #ddd; }
-    .score { font-weight: bold; }
-    .pos { color: green; } .neg { color: red; } .neu { color: gray; }
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.error-msg {
+    color: #dc2626;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.pos {
+    color: green;
+    font-weight: bold;
+}
+
+.neg {
+    color: red;
+    font-weight: bold;
+}
+
+.neu {
+    color: gray;
+    font-weight: bold;
+}
